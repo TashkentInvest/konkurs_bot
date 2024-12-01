@@ -90,7 +90,7 @@ async def subscribe_command(message: types.Message):
     user_id = message.from_user.id
     chat_id = message.chat.id
     if await is_subscribed(user_id):
-        await bot.send_message(chat_id, "Сиз аллақачон каналга обуна бўлдингиз!")
+        await bot.send_message(chat_id, "<<Сиз аллақачон каналга обуна бўлдингиз!>>")
     else:
         # Send the user the link to the channel so they can subscribe
         await bot.send_message(chat_id, f"Каналга обуна бўлиш учун [бу ерга](https://t.me/tik_konkurs) босинг.")
