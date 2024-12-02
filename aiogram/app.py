@@ -94,7 +94,7 @@ async def subscribe_command(message: types.Message):
     else:
         # Send the user the link to the channel so they can subscribe
         await bot.send_message(chat_id, f"Каналга обуна бўлиш учун [бу ерга](https://t.me/tik_konkurs) босинг.")
-
+x
 # Handler for the "/post" command
 @dp.message_handler(commands=['post'])
 async def post_content(message: types.Message):
@@ -108,7 +108,7 @@ async def post_content(message: types.Message):
         "Тошкентда 110 дан ортиқ ер участкалари E-auksionда сотувга қўйилди.\n\n"
         "Бизнинг платформамизда сиз осонлик билан ариза беришингиз мумкин.\n\n"
         "Янги лойиҳаларни кўриш учун қуйидаги ҳаволани босинг."
-    )
+    )   
 
     # Create an inline button for the post content
     keyboard = InlineKeyboardMarkup()
